@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.janel.rockpaperscissors.MainActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:onClick="rockBattle"
+            android:text="Rock"
+            android:id="@+id/rock"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:layout_gravity="left|bottom" />
+
+        <Button
+            android:onClick="paperBattle"
+            android:text="Paper"
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
+            android:onClick="scissorBattle"
+            android:text="Scissors"
+            android:id="@+id/scissors"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:layout_gravity="right|bottom" />
+
+        <TextView
+            android:layout_weight="3"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:text="Defeat the Dark Side"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textSize="14pt"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Battles Won:"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/lightpoint"
+            android:layout_gravity="right|center_vertical"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Battles Won:"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/darkpoint"
+            android:layout_gravity="left|center_vertical"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="289dp"
+            android:layout_height="240dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:text="Kylo counters with "
+            android:id="@+id/counter"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+</RelativeLayout>
